@@ -13,13 +13,13 @@ table {
 }
 th{
     border: thin solid #eeeeee;
-    font-size: 150%;
+    font-size: 120%;
 }
 td{ 
     border: thin solid #eeeeee;
     padding: 2%;
     vertical-align: top;
-    font-size: 150%;
+    font-size: 120%;
 }
 .Img {
     padding: 1%;
@@ -37,10 +37,49 @@ td.i{
 /* formulaire */
 
 form {
-    font-size: 150%;
+    font-size: 100%;
     
 }
-input
-    {
-        size: 10rem;
-    }
+/* mis en page acceuil et nav */
+.div1
+{
+    display: flex;
+    
+}
+.articleflex
+{ 
+    flex: 60%;
+}
+aside{
+    background-color: #eeeeee;
+    border: 1px solid #000000;
+    
+    flex: 30%;
+    font-size: small;
+    /*height: fit-content;*/
+}
+
+ul{
+    display: flex;
+    background-color: black;
+    padding: 1%;
+}
+li{
+    margin-left: 2em;
+}
+.txtBlanc{
+    color: blanchedalmond;
+}
+figure{
+    display: flex;
+}
+.txtacenter{
+    text-align: center;
+    flex: 30%;
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+body{
+    height: fit-content;
+    width: fit-content;
+}
