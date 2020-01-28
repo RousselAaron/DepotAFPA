@@ -1,8 +1,6 @@
-html
-{
+html{
     font-size: 100%;
 }
-
 /* tableau */
 
 table {
@@ -10,34 +8,36 @@ table {
     border-collapse: collapse;
     margin: 2%;
     width: 90%;
+    overflow: hidden;
 }
 th{
     border: thin solid #eeeeee;
-    font-size: 120%;
 }
 td{ 
     border: thin solid #eeeeee;
-    padding: 2%;
+    padding: 1%;
     vertical-align: top;
-    font-size: 120%;
 }
 .Img {
     padding: 1%;
     border: thin solid #eeeeee;
-    border-radius: 5%; 
+    border-radius: 5%;
+    height: auto;
+    width: 5rem;
     } 
 .btxt{
     color: rgb(14, 179, 255);
    
 }
 td.i{
-    width: 10%;
+    width: fit-content;
+    height: fit-content;
 }
 
 /* formulaire */
 
 form {
-    font-size: 100%;
+    font-size: medium;
     
 }
 /* mis en page acceuil et nav */
@@ -55,17 +55,17 @@ aside{
     border: 1px solid #000000;
     
     flex: 30%;
-    font-size: small;
-    /*height: fit-content;*/
+    font-size: medium;
 }
 
 ul{
     display: flex;
     background-color: black;
     padding: 1%;
+
 }
 li{
-    margin-left: 2em;
+    margin-left: 2rem;
 }
 .txtBlanc{
     color: blanchedalmond;
@@ -74,12 +74,14 @@ figure{
     display: flex;
 }
 .txtacenter{
-    text-align: center;
-    flex: 30%;
-    font-size: 2.5rem;
-    padding: 1rem;
+    flex: 20%;
+    font-size: xx-large;
+    padding: 1%;
+    margin: 1%;
 }
-body{
-    height: fit-content;
-    width: fit-content;
+.logo
+{
+    padding: 1%;
+    height: auto;
+    width: 30%;
 }
