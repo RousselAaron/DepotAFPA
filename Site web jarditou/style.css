@@ -1,0 +1,46 @@
+html
+{
+    font-size: 100%;
+}
+
+/* tableau */
+
+table {
+    border: thin solid #eeeeee;
+    border-collapse: collapse;
+    margin: 2%;
+    width: 90%;
+}
+th{
+    border: thin solid #eeeeee;
+    font-size: 150%;
+}
+td{ 
+    border: thin solid #eeeeee;
+    padding: 2%;
+    vertical-align: top;
+    font-size: 150%;
+}
+.Img {
+    padding: 1%;
+    border: thin solid #eeeeee;
+    border-radius: 5%; 
+    } 
+.btxt{
+    color: rgb(14, 179, 255);
+   
+}
+td.i{
+    width: 10%;
+}
+
+/* formulaire */
+
+form {
+    font-size: 150%;
+    
+}
+input
+    {
+        size: 10rem;
+    }
