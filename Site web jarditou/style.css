@@ -77,12 +77,14 @@
     }
     aside
     {
+
         background-color: #eeeeee;
         border: 1px solid #000000;
         flex: 30%;
         font-size: medium;
+        display: none;
+        
     }
-
     /* téte de page */
     header
     {
@@ -129,7 +131,7 @@
     }
 }
 
-@media screen and (min-width: 769px){
+@media screen and (min-width: 768px){
     html
     {
         font-size: 100%;
@@ -221,6 +223,7 @@
     }
     .promo
     {
+        margin: 1%;
         width: 100%;
         height: auto;
     }

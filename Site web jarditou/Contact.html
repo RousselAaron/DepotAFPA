@@ -26,9 +26,7 @@
             </li>
         </ul>
     </nav>
-    <heading>
-            <h1>Nous contacter</h1>
-    </heading>
+    <h1>Nous contacter</h1>
             <form action="http://bienvu.net/script.php" method="POST" id="formulaire_contact">
                 <fieldset>
                     <legend>
@@ -44,7 +42,7 @@
                         <br>
                     date de naissance*: <input required type="date" name="ddn" autocomplete="bday"><br>
                     Code postal: <input type="text" name="cdp" autocomplete="postal-code"><br>
-                    Adresse: <input type="text" name="adrs" autocomplete="street-address"><br>
+                    Adresse: <input type="text" name="adrs" autocomplete="on"><br>
                     Ville: <input type="text" name="ville" autocomplete="on"><br>
                     Email*: <input required type="email" name="email" autocomplete="email"><br>
             
@@ -54,8 +52,8 @@
                         Votre demande
                     </legend>
                     Sujet*:
-                    <select required name="sujet">
-                        <option value="Mes commandes">Mes commandes</option>
+                    <select required name="sujet" size="1">
+                        <option value="mescommandes">Mes commandes</option>
                         <option value="qsp">Question sur un produit</option>
                         <option value="rclm">Réclamation</option>
                         <option value="autres">Autres</option>
