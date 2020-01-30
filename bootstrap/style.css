@@ -1,0 +1,14 @@
+.no-gutters>[class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+  }
+  /* image tableau */
+  .Img
+  {
+      padding: 1%;
+      border: thin solid #eeeeee;
+      border-radius: 5%;
+      height: auto;
+      width: 5rem;
+      } 
