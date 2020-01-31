@@ -1,8 +1,4 @@
-.no-gutters>[class*="col-"] {
-    padding-right: 0;
-    padding-left: 0;
-}
-  }
+
   /* image tableau */
   .Img
   {
@@ -12,3 +8,9 @@
       height: auto;
       width: 5rem;
       } 
+      .no-gutters>.col>,[class*="col-"] {
+        margin-right: 0;
+        margin-left: 0;
+          padding-right: 0;
+          padding-left: 0;
+        }
