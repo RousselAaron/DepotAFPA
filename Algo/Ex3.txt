@@ -61,7 +61,7 @@ ecrire "entrez le nombre X"
 lire X
 ecrire "entrez le nombre Y"
 lire Y
-si (X!=0 et Y==0)ou(X==0 et Y!=0) alors
+si X==0 ou Y==0 alors
 	ecrire "le produit est nul"
 sinon si (X<0 et Y<0) ou (X>0 et Y>0)
 	ecrire "le produit est positif"
