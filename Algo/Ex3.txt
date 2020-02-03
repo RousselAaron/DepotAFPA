@@ -11,17 +11,16 @@ sinon
 fin
 
 3.2)
-variable X, Y, i en entier
+variable X, Y en entier
 début
 ecrire "entrez la valeur de X"
 lire X
 ecrire "entrez la valeur de Y"
 lire Y
-i = X + Y
-si i < 0 alors
-	ecrire "la somme des valeurs est négative"
-sinon 
+si (X < 0 et Y < 0) ou (X > 0 et Y > 0) alors
 	ecrire "la somme des valeurs est positive"
+sinon 
+	ecrire "la somme des valeurs est négative"
 fin
 
 3.3)
@@ -34,22 +33,59 @@ ecrire "entrez le second nom"
 lire B 
 ecrire "entrez le troisiéme nom"
 lire C
-si A < B alors
-	si A < C alors
-		a = vrai
-	sinon
-		a = faux
-	finsi
-	si B < C alors
-		b = vrai
-	sinon
-		b = faux
-	finsi
-	si a & b = vrai alors
-		écrire A, B, C, "sont ranger dans l'ordre alphabétique"
-	finsi
+si A < B et B < C alors
+	ecrire "ils sont ranger dans l'ordre alphabétique"
 sinon 
-ecrire "ils ne sont pas ranger dans l'ordre alphabétique"
+	ecrire "ils ne sont pas ranger dans l'ordre alphabétique"
 finsi
 
+3.4)
+variable X en entier
+début
+ecrire "entrez un nombre"
+lire X
+si X =< 0 alors
+	si X < 0 alors
+		ecrire "le nombre est négatif"
+	sinon
+		ecrire "le nombre est nul"
+	finsi
+sinon 
+	ecrire "le nombre est positif"
+finsi
 
+3.5)
+variable X, Y en entier
+début
+ecrire "entrez le nombre X"
+lire X
+ecrire "entrez le nombre Y"
+lire Y
+si (X!=0 et Y==0)ou(X==0 et Y!=0) alors
+	ecrire "le produit est nul"
+sinon si (X<0 et Y<0) ou (X>0 et Y>0)
+	ecrire "le produit est positif"
+sinon
+	ecrire "le produit est négatif"
+finsi
+fin
+
+3.6)
+variable age en entier
+début
+ecrire "entrez l'age de l'enfant"
+lire age
+si age > 6 et age < 12 alors
+	si age > 6 et age < 10 alors
+		si age > 6 et age < 8 alors
+			ecrire "il est dans la catégorie Poussin"
+		sinon
+			ecrire "il est dans la catégorie Pupille"
+		finsi
+	sinon
+		ecrire "il est dans la catégorie Minime"
+	finsi
+sinon 
+	ecrire "il est dans la catégorie Cadet"
+finsi
+fin
