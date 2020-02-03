@@ -1,0 +1,55 @@
+
+3.1)
+variable X, en entier
+début
+ecrire "entrez un nombre"
+lire X
+si X < 0 alors
+	ecrire "la valeur du nombre est négative"
+sinon
+	ecrire "la valeur du nombre est positive"
+fin
+
+3.2)
+variable X, Y, i en entier
+début
+ecrire "entrez la valeur de X"
+lire X
+ecrire "entrez la valeur de Y"
+lire Y
+i = X + Y
+si i < 0 alors
+	ecrire "la somme des valeurs est négative"
+sinon 
+	ecrire "la somme des valeurs est positive"
+fin
+
+3.3)
+variable A, B, C en caractére 
+variable a, b en booléen
+début
+ecrire "entrez le premier nom"
+lire A
+ecrire "entrez le second nom"
+lire B 
+ecrire "entrez le troisiéme nom"
+lire C
+si A < B alors
+	si A < C alors
+		a = vrai
+	sinon
+		a = faux
+	finsi
+	si B < C alors
+		b = vrai
+	sinon
+		b = faux
+	finsi
+	si a & b = vrai alors
+		écrire A, B, C, "sont ranger dans l'ordre alphabétique"
+	finsi
+sinon 
+ecrire "ils ne sont pas ranger dans l'ordre alphabétique"
+finsi
+
+

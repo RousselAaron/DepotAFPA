@@ -1,0 +1,59 @@
+1.1)
+A=3
+b=4
+
+1.2)
+A=2
+B=3
+C=1
+
+1.3)
+A=5
+B=1
+
+1.4)
+A=13
+B=13
+C=13
+
+1.5)
+A=2
+B=2
+non/non
+
+1.6)
+Variable A, B, echange, en entier
+début
+A=7
+b=8
+echange=A
+A=B
+B=echange
+fin
+
+
+1.7)
+variables A, B, C, echange en entier
+début
+A = 4
+B = 9
+C = 0
+echange = A
+A = C
+C = B
+B = echange
+fin
+
+1.8)
+début
+1) A = "423"
+2) B = "12"
+3) C = erreur cause mauvais opérateur
+fin
+
+1.9)
+début
+1) A = "423"
+2) B = "12"
+3) C = "42312"
+fin

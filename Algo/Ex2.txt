@@ -1,0 +1,40 @@
+2.1)
+début
+1)val = 231
+2)double = 462
+3)231
+4)462
+fin
+
+2.2)
+variables x, entrée en entier
+début
+ecrire "entrez un nombres : "
+x = lire entrée
+x = x^2
+ecrire "son carré est :" & x
+fin 
+
+2.3)
+variables prixht, nbart, tauxtva, total en entier
+début
+ecrire "entrez le prix de l'article : "
+lire prixht
+ecrire "entrez le nombres d'article : "
+lire nbart
+ecrire "entrez le taux de TVA : "
+lire tauxtva
+total = (prixht*nbart)*tauxtva
+ecrire "le pris total est : " & total
+
+2.4)
+variable A, B, C, D, 1, 2, 3, yoda en caractéres
+début
+A = "belle marquise"
+B = "vos beaux yeux"
+C = "me font mourir"
+D = "d'amour"
+1 = A & B & C & D
+2 = B & A & C & D
+3 = B & C & D & A
+yoda = A & D & C & B
