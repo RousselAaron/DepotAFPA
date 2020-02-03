@@ -1,0 +1,96 @@
+4.1)
+si Tutu <= Toto + 4 et Tata != "ok" alors
+ Tutu = Tutu - 1
+sinon
+ Tutu = Tutu + 1
+finsi
+fin
+
+4.2)
+variable H, M, S en entier
+début
+ecrire "entrez l'heure"
+lire H
+ecrire "entree les minutes"
+lire M
+si H=>0 et H=<24 alors
+	si M=>0 et M=<60 alors
+		M=M+1
+	sinon
+		M=0
+		H=H+1
+sinon
+	H=0
+finsi
+ecrire "dans une minute, il sera" H ":" M
+fin
+
+4.3)
+variable H, M, S en entier
+début
+ecrire "entrez l'heure"
+lire H
+ecrire "entree les minutes"
+lire M
+ecrire "entree les secondes"
+lire S
+si H>=0 et H=<24 alors
+	si M>=0 et M=<60 alors
+		si S>=0 et S=<60
+			S=S+1
+		sinon
+			S=0 
+			M=M+1
+	sinon
+		M=0
+		H=H+1
+sinon
+	H=0
+finsi
+ecrire "dans une minute, il sera" H ":" M ":" S
+fin
+
+4.4)
+variable prix, nbcopie en entier
+début
+ecrire "entrez le nombre(s) de copie(s) a imprimer"
+lire nbcopie
+si nbcopie =< 10
+	prix = 0.10
+sinonsi nbcopie =< 30
+	prix = prix + 0.09
+sinonsi nbcopie > 30
+	prix = prix + 0.08
+finsi
+ecrire "le prix a payer est de :"prix"pour"nbcopie"copie(s)"
+fin
+ 4.5)
+variables age en entier
+variable genre, H, F en caractére
+début
+H = "homme"
+F = "femme"
+ecrire "entrez votre genre"
+lire genre
+ecrire "entrez votre age"
+lire age
+si genre==H ou genre==F alors
+	si genre==H et age >= 20 alors
+		ecrire "paye l'impots"
+	sinonsi genre==F et age =< 35 et age >= 18 alors
+		ecrire "paye l'impots"
+sinon
+	ecrire "ne paye pas l'impots"
+finsi
+fin
+
+4.6)
+variable votemin, votemaj, nbvote en entier
+variable candidat1, candidat2, candidat3, candidat4 en caratére
+
+		
+
+
+
+	
+	
