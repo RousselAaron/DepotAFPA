@@ -1,16 +1,16 @@
+/* image tableau */
+.Img {
+  padding: 1%;
+  border: thin solid #eeeeee;
+  border-radius: 5%;
+  height: auto;
+  width: 5rem;
+}
 
-  /* image tableau */
-  .Img
-  {
-      padding: 1%;
-      border: thin solid #eeeeee;
-      border-radius: 5%;
-      height: auto;
-      width: 5rem;
-      } 
-      .no-gutters>.col>,[class*="col-"] {
-        margin-right: 0;
-        margin-left: 0;
-          padding-right: 0;
-          padding-left: 0;
-        }
+.no-gutters>.col>,
+[class*="col-"] {
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+}

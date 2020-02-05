@@ -1,133 +1,157 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Jarditou - Acceuil</title>
 </head>
-    <body>
-        <div class="container-fluid"> 
-            <header>
-                <figure class="row no-gutters">
-                    <img class="col-12 col-sm-6 col-md-7" src="../Site web jarditou/jarditou_html/images/jarditou_logo.jpg" class="image-fluid" alt="Image responsive" title="Image responsive">
-                    <figcaption class="col-12d-sm-block col-sm-6 col-md-5 col-lg-4 col-xl-3 text-center align-self-center"><h1>Tout le jardin</h1></figcaption>
-                </figure>
-            </header>
-            <nav id="navbar" class="navbar navbar-expand-sm bg-dark navbar-dark no-gutters">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <figure class="row no-gutters">
+                <img class="col-12 col-sm-6 col-md-7" src="../Site web jarditou/jarditou_html/images/jarditou_logo.jpg"
+                    class="image-fluid" alt="Image responsive" title="Image responsive">
+                <figcaption class="col-12d-sm-block col-sm-6 col-md-5 col-lg-4 col-xl-3 text-center align-self-center">
+                    <h1>Tout le jardin</h1>
+                </figcaption>
+            </figure>
+        </header>
+        <nav id="navbar" class="navbar navbar-expand-sm bg-dark navbar-dark no-gutters">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tableau.html">Tableau</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formulaire.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="px-3">
+            <h1>Nous contacter</h1>
+            <form action="http://bienvu.net/script.php" method="POST" id="formulaire_contact">
+                <fieldset>
+                    <legend>
+                        Vos coordonnées
+                    </legend>
+                    <div class="form-group">
+                        <label for="family-name">Votre nom:*</label>
+                        <input required type="text" class="form-control" name="" id="family-name"
+                            placeholder="Saisir votre nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="given-name">Votre prénom:*</label>
+                        <input required type="text" class="form-control" name="given-name" id="given-name"
+                            placeholder="Saisir votre prénom">
+                    </div>
+                    <p>
+                        Sexe*:
+                    </p>
+                    <div class="form-check form-check-inline">
+                        <input required class="form-check-input" type="radio" name="sexe" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="masculin">Masculin</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input required class="form-check-input" type="radio" name="sexe" id="S" value="option2">
+                        <label class="form-check-label" for="féminin">Féminin</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="bday">Date de naissance:*</label>
+                        <input required type="text" class="form-control" maxlength="10" name="bday" id="bday"
+                            placeholder="votre date de naissance">
+                    </div>
+                    <div class="form-group">
+                        <label for="cp">Code postal:</label>
+                        <input type="number" class="form-control" name="cp" id="cp"
+                            placeholder="Saisir votre code postal">
+                    </div>
+                    <div class="form-group">
+                        <label for="adresse">Adresse:</label>
+                        <input type="text" class="form-control" name="adresse" id="adresse"
+                            placeholder="Saisir votre adresse">
+                    </div>
+                    <div class="form-group">
+                        <label for="ville">Ville:</label>
+                        <input type="text" class="form-control" name="ville" id="ville"
+                            placeholder="Saisir le nom de votSre ville">
+                    </div>
+                    <div class="form-group">
+                        <label for="courriel">Adresse email*:</label>
+                        <input required type="email" class="form-control" name="courriel" id="courriel"
+                            placeholder="Saisir votre adresse mail">
+                    </div>
+
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Votre demande
+                    </legend>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Sujet:*</label>
+                        <select required class="form-control" id="sujet">
+                            <option>Mes commandes</option>
+                            <option>Question sur un produit</option>
+                            <option>Réclamation</option>
+                            <option>Autres</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Votre question:*</label>
+                        <textarea required class="form-control" id="question" rows="3"></textarea>
+                    </div>
+                </fieldset>
+                <div class="form-check form-check-inline">
+                    <input required class="form-check-input" type="checkbox" id="signform">
+                    <label class="form-check-label" for="inlineCheckbox1">J'accepte le traitement informatique de ce
+                        formulaire</label>
+                </div>
+                <button type="submit" class="btn btn-primary mx-1 my-1">Submit</button><button type="button"
+                    class="btn btn-secondary mx-1 my-1">Annuler</button>
+            </form>
+        </section>
+        <footer>
+            <nav id="navbar" class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar2">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <div class="collapse navbar-collapse" id="collapsibleNavbar2">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="Index.html">Accueil</a>
+                            <a class="nav-link" href="">Mentions légale</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="tableau.html">Tableau</a>
+                            <a class="nav-link" href="">Horaires</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="formulaire.html">Contact</a>
+                            <a class="nav-link" href="">Plan du site</a>
                         </li>
                     </ul>
-                </div> 
+                </div>
             </nav>
-            <section class="px-3">
-                <h1>Nous contacter</h1>
-                <form action="http://bienvu.net/script.php" method="POST" id="formulaire_contact">
-                    <fieldset>
-                        <legend>
-                            Vos coordonnées
-                        </legend>
-                        <div class="form-group">
-                            <label for="family-name">Votre nom:*</label>
-                            <input required type="text" class="form-control" name="" id="family-name" placeholder="Saisir votre nom">        
-                        </div>
-                        <div class="form-group">
-                            <label for="given-name">Votre prénom:*</label>
-                            <input required type="text" class="form-control" name="given-name" id="given-name" placeholder="Saisir votre prénom">        
-                        </div>
-                        <p>
-                            Sexe*:
-                        </p>
-                        <div class="form-check form-check-inline">
-                            <input required class="form-check-input" type="radio" name="sexe" id="inlineRadio1" value="option1">
-                            <label class="form-check-label" for="masculin">Masculin</label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input required class="form-check-input" type="radio" name="sexe" id="S" value="option2">
-                            <label class="form-check-label" for="féminin">Féminin</label>
-                          </div>                        <div class="form-group">
-                            <label for="bday">Date de naissance:*</label>
-                            <input required type="text" class="form-control" maxlength="10" name="bday" id="bday" placeholder="votre date de naissance">        
-                        </div>
-                        <div class="form-group">
-                            <label for="cp">Code postal:</label>
-                            <input type="number" class="form-control" name="cp" id="cp" placeholder="Saisir votre code postal">        
-                        </div>
-                        <div class="form-group">
-                            <label for="adresse">Adresse:</label>
-                            <input type="text" class="form-control" name="adresse" id="adresse" placeholder="Saisir votre adresse">        
-                        </div>
-                        <div class="form-group">
-                            <label for="ville">Ville:</label>
-                            <input type="text" class="form-control" name="ville" id="ville" placeholder="Saisir le nom de votSre ville">        
-                        </div>
-                        <div class="form-group">
-                            <label for="courriel">Adresse email*:</label>
-                            <input required type="email" class="form-control" name="courriel" id="courriel" placeholder="Saisir votre adresse mail">        
-                        </div>
-                
-                    </fieldset>
-                    <fieldset>
-                        <legend>
-                            Votre demande
-                        </legend>
-                        <div class="form-group">
-                            <label for="exampleFormControlSelect1">Sujet:*</label>
-                            <select required class="form-control" id="sujet">
-                              <option>Mes commandes</option>
-                              <option>Question sur un produit</option>
-                              <option>Réclamation</option>
-                              <option>Autres</option>
-                            </select>
-                          </div>
-                          <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Votre question:*</label>
-                            <textarea required class="form-control" id="question" rows="3"></textarea>
-                          </div>                    
-                        </fieldset>
-                    <div class="form-check form-check-inline">
-                        <input required class="form-check-input" type="checkbox" id="signform">
-                        <label class="form-check-label" for="inlineCheckbox1">J'accepte le traitement informatique de ce formulaire</label>
-                      </div>
-                      <button type="submit" class="btn btn-primary mx-1 my-1">Submit</button><button type="button" class="btn btn-secondary mx-1 my-1">Annuler</button>
-                </form>
-            </section>
-            <footer>
-                <nav id="navbar" class="navbar navbar-expand-sm bg-dark navbar-dark">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar2">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar2">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="">Mentions légale</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="">Horaires</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="">Plan du site</a>
-                            </li>
-                        </ul>
-                    </div> 
-                </nav>
-            </footer>
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>   
-        </div>
-    </body>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+        </script>
+    </div>
+</body>
+
 </html>
