@@ -6,5 +6,5 @@ x = prompt("entrez un nombre");
 n = prompt("entrez le nombre de multiple souhaitez");
 for (i = 1; i <= n; i++) {
     res = i * x;
-    console.log(i + " " + i + "X" + x + "=" + res);
+    document.write(i + " " + i + "X" + x + "=" + res);
 }
