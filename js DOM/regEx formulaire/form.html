@@ -41,59 +41,57 @@
         </nav>
         <section class="px-3">
             <h1>Nous contacter</h1>
-            <form action="http://bienvu.net/script.php" method="POST" target="blank" id="formulaire_contact">
+            <form action="http://bienvu.net/script.php" method="POST" target="blank" id="form">
                 <fieldset>
                     <legend>
                         Vos coordonnées
                     </legend>
                     <div class="form-group">
                         <label for="family-name">Votre nom:*</label>
-                        <input id="input1" type="text" class="form-control" name="" id="family-name"
-                            placeholder="Saisir votre nom">
+                        <input id="input1" type="text" class="form-control" name="family-name"
+                            placeholder="Saisir votre nom"><span id="ErrorLname"></span>
                     </div>
                     <div class="form-group">
                         <label for="given-name">Votre prénom:*</label>
-                        <input id="input2" type="text" class="form-control" name="given-name" id="given-name"
-                            placeholder="Saisir votre prénom">
+                        <input id="input2" type="text" class="form-control" name="given-name"
+                            placeholder="Saisir votre prénom"><span id="ErrorGname"></span>
                     </div>
                     <p>
                         Sexe*:
                     </p>
                     <div class="form-check form-check-inline">
-                        <input id="input3" class="form-check-input" type="radio" name="sexe" id="inlineRadio1"
-                            value="option">
+                        <input id="input3" class="form-check-input" type="radio" name="sexe" value="Masculin">
                         <label class="form-check-label" for="masculin">Masculin</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input id="input3" class="form-check-input" type="radio" name="sexe" id="S" value="option2">
+                        <input id="input3" class="form-check-input" type="radio" name="sexe" value="Féminin">
                         <label class="form-check-label" for="féminin">Féminin</label>
                     </div>
                     <div class="form-group">
                         <label for="bday">Date de naissance:*</label>
-                        <input id="input5" type="text" class="form-control" maxlength="10" name="bday" id="bday"
-                            placeholder="votre date de naissance">
+                        <input id="input5" type="text" class="form-control" maxlength="10" name="bday"
+                            placeholder="votre date de naissance"><span id="ErrorBday"></span>
                     </div>
                     <div class="form-group">
                         <label for="cp">Code postal:</label>
-                        <input id="input6" type="number" class="form-control" name="cp" id="cp"
-                            placeholder="Saisir votre code postal">
+                        <input id="input6" type="number" class="form-control" name="cp"
+                            placeholder="Saisir votre code postal"><span id="ErrorCdp"></span>
                     </div>
                     <div class="form-group">
                         <label for="adresse">Adresse:</label>
-                        <input id="input7" type="text" class="form-control" name="adresse" id="adresse"
-                            placeholder="Saisir votre adresse">
+                        <input id="input7" type="text" class="form-control" name="adresse"
+                            placeholder="Saisir votre adresse"><span id="ErrorAdrss"></span>
                     </div>
                     <div class="form-group">
                         <label for="ville">Ville:</label>
-                        <input id="input8" type="text" class="form-control" name="ville" id="ville"
-                            placeholder="Saisir le nom de votSre ville">
+                        <input id="input8" type="text" class="form-control" name="ville"
+                            placeholder="Saisir le nom de votre ville"><span id="ErrorVille"></span>
                     </div>
                     <div class="form-group">
                         <label for="courriel">Adresse email*:</label>
-                        <input id="input9" type="email" class="form-control" name="courriel" id="courriel"
-                            placeholder="Saisir votre adresse mail">
+                        <input id="input9" type="email" class="form-control" name="courriel"
+                            placeholder="Saisir votre adresse mail"><span id="ErrorEmail"></span>
                     </div>
-
                 </fieldset>
                 <fieldset>
                     <legend>
@@ -101,7 +99,7 @@
                     </legend>
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Sujet:*</label>
-                        <select id="select1" class="form-control" id="sujet">
+                        <select id="select1" class="form-control" name="questions">
                             <option>Mes commandes</option>
                             <option>Question sur un produit</option>
                             <option>Réclamation</option>
@@ -110,15 +108,16 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Votre question:*</label>
-                        <textarea id="textarea1" class="form-control" id="question" rows="3"></textarea>
+                        <textarea id="textarea1" class="form-control" name="textquestions" rows="3"></textarea><span
+                            id="ErrorTexta"></span>
                     </div>
                 </fieldset>
                 <div class="form-check form-check-inline">
-                    <input id="input10" class="form-check-input" type="checkbox" id="signform">
+                    <input id="input10" class="form-check-input" type="checkbox">
                     <label class="form-check-label" for="inlineCheckbox1">J'accepte le traitement informatique de ce
                         formulaire</label>
                 </div>
-                <button id="button1" type="submit" class="btn btn-primary mx-1 my-1" onclick="">Submit</button><button
+                <button id="button1" type="submit" class="btn btn-primary mx-1 my-1">Submit</button><button
                     type="button" class="btn btn-secondary mx-1 my-1">Annuler</button>
             </form>
         </section>
