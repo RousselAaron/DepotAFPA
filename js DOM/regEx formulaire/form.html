@@ -72,7 +72,7 @@
                     </div>
                     <div class="form-group">
                         <label for="bday">Date de naissance:*</label>
-                        <input id="bday" type="date" class="form-control" maxlength="10" name="bday"
+                        <input id="bday" type="text" class="form-control" maxlength="10" name="bday"
                             placeholder="votre date de naissance"><span id="errorBday"></span>
                     </div>
                     <div class="form-group">
@@ -103,11 +103,13 @@
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Sujet:*</label>
                         <select id="questions" class="form-control" name="questions">
-                            <option>Mes commandes</option>
-                            <option>Question sur un produit</option>
-                            <option>Réclamation</option>
-                            <option>Autres</option>
+                            <option value="false">Choisissez un sujet</option>
+                            <option value="commandes">Mes commandes</option>
+                            <option value="produit">Question sur un produit</option>
+                            <option value="reclamation">Réclamation</option>
+                            <option value="autres">Autres</option>
                         </select>
+                        <span id="errorQuestions"></span>
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Votre question:*</label>
@@ -122,8 +124,8 @@
                 </div>
                 <span id="errorChkForm"></span>
                 <br>
-                <button id="button1" type="submit" class="btn btn-primary mx-1 my-1">Submit</button><button
-                    type="button" class="btn btn-secondary mx-1 my-1">Annuler</button>
+                <button id="button1" type="submit" class="btn btn-primary mx-1 my-1">Submit</button><button type="reset"
+                    class="btn btn-secondary mx-1 my-1">Annuler</button>
             </form>
         </section>
         <footer>
