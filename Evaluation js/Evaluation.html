@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Evaluations Javascript</title>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <nav id="navbar" class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top position-">
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="row collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav col-6 col-sm-7 col-md-8 px-2">
+                    <li>
+                        <div class="card-header border-0" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="navbar-items btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne,#collapsibleNavbar" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    Exercice 1
+                                </button>
+                            </h5>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card-header border-0" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo,#collapsibleNavbar" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    Exercice 2
+                                </button>
+                            </h5>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card-header border-0" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseThree,#collapsibleNavbar" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    Exercice 3
+                                </button>
+                            </h5>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card-header border-0" id="headingFour">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseFour,#collapsibleNavbar" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    Exercice 4
+                                </button>
+                            </h5>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card-header border-0" id="headingFive">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseFive,#collapsibleNavbar" aria-expanded="false"
+                                    aria-controls="collapseFive">
+                                    Exercice 5
+                                </button>
+                            </h5>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card-header border-0" id="headingSix">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseSix,#collapsibleNavbar" aria-expanded="false"
+                                    aria-controls="collapseSix">
+                                    Exercice 6
+                                </button>
+                            </h5>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card-header border-0" id="headingSeven">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseSeven,#collapsibleNavbar" aria-expanded="false"
+                                    aria-controls="collapseSeven">
+                                    Exercice 7
+                                </button>
+                            </h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body mt-5">
+                    <hr class="mt-5">
+                    <h1>Exercice 1 : total d'une commande</h1>
+                    <hr>
+                    <p>A partir de la saisie du prix unitaire noté PU d'un produit et de la quantité commandée QTECOM,
+                        afficher le prix à payer PAP, en détaillant le port PORT et la remise REM, sachant que :</p>
+                    <ul>
+                        <li>le port est gratuit si le prix des produits TOT est supérieur à 500 €. Dans le cas
+                            contraire, le port est de 2% de TOT</li>
+                        <li>la valeur minimale du port à payer est de 6 €</li>
+                        <li>la remise est de 5% si TOT est compris entre 100 et 200 € et de 10% au-delà</li>
+                    </ul>
+                    <p>Testez tous les cas possibles afin de vous assurez que votre script fonctionne.</p>
+                    <hr>
+                    <h1>réponse</h1>
+                    <hr>
+                    <input id="Ex1in1" type="text" class="form-control" placeholder="Saisir le prix de l'article">
+                    <br>
+                    <input id="Ex1in2" type="text" class="form-control"
+                        placeholder="Saisir la quantité de cette article">
+                    <br>
+                    <span id="reponseEx1"></span>
+                    <hr calss="my-1">
+                    <input type="button" id="buttonEx1" value="ajouter le/les article(s)" class="btn btn-primary">
+                    <input type="reset" id="buttonReset1" value="Recomencer" class="btn btn-primary">
+
+                    <script type="text/javascript" src="exercice1.js"></script>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body mt-5">
+                    <hr class="mt-5">
+                    <h1>Exercice 2 : Somme des entiers inférieurs à N</h1>
+                    <hr>
+                    <p>Ecrivez un programme qui affiche la somme des nombres inférieurs à N.</p>
+                    <hr>
+                    <h1>réponse</h1>
+                    <hr>
+                    <input id="Ex2" type="text" class="form-control" placeholder="Saisir un entier N">
+                    <br>
+                    <span id="reponseEx2"></span>
+                    <hr calss="my-1">
+                    <input type="button" id="buttonEx2" value="valider" class="btn btn-primary">
+                    <input type="reset" id="buttonReset2" value="Recomencer" class="btn btn-primary">
+                    <script type="text/javascript" src="exercice2.js"></script>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    <hr class="mt-5">
+                    <h1>Exercice 3 - Mini et maxi</h1>
+                    <hr>
+                    <p>Modifiez le programme de la moyenne pour afficher le minimum et le maximum.</p>
+                    <p>Exercice 'moyenne' : dans chapitre 07 les boucles_ : Ecrire un programme qui saisit des entiers
+                        et en affiche la somme et la moyenne (on arrête la saisie avec la valeur 0).</p>
+                    <hr>
+                    <h1>réponse</h1>
+                    <span class="my-1" id="reponseEx3"></span>
+                    <hr>
+                    <input type="button" id="buttonEx3" value="lancer" class="btn btn-primary">
+                    <script type="text/javascript" src="exercice3.js"></script>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body">
+                    <hr class="mt-5">
+                    <h1>Exercice 4 - Calcul du nombre de jeunes, de moyens et de vieux</h1>
+                    <hr>
+                    <p>Il s'agit de dénombrer les personnes d'âge strictement inférieur à 20 ans, les personnes d'âge
+                        strictement supérieur à 40 ans et celles dont l'âge est compris entre 20 ans et 40 ans (20 ans
+                        et 40 ans y compris).</p>
+                    <p>Le programme doit demander les âges successifs.</p>
+                    <p>Le comptage est arrêté dès la saisie d'un centenaire. Le centenaire est compté.</p>
+                    <p>Donnez le programme Javascript correspondant qui affiche les résultats.</p>
+                    <hr>
+                    <h1>réponse</h1>
+                    <input id="Ex4" type="text" class="form-control" placeholder="Saisir un age">
+                    <br>
+                    <span id="reponseEx4"></span>
+                    <hr calss="my-1">
+                    <input type="button" id="buttonEx4" value="valider" class="btn btn-primary">
+                    <input type="reset" id="buttonReset4" value="Recomencer" class="btn btn-primary">
+                    <script type="text/javascript" src="exercice4.js"></script>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                <div class="card-body">
+                    <hr class="mt-5">
+                    <h1>Exercice 5 : Table de multiplication</h1>
+                    <hr>
+                    <p>Ecrivez une fonction qui affiche une table de multiplication.</p>
+                    <p>Votre fonction doit prendre un paramètre qui permet d'indiquer quelle table afficher.</p>
+                    <p>Par exemple, TableMultiplication(7) doit afficher :</p>
+                    <p>1 x 7 = 7<br>2 x 7 = 14<br>3 x 7 = 21 ...</p>
+                    <hr>
+                    <h1>réponse</h1>
+                    <input id="Ex5" type="text" class="form-control" placeholder="Saisir un nombre">
+                    <br>
+                    <span class="my-1" id="reponseEx5"></span>
+                    <hr>
+                    <input type="button" id="buttonEx5" value="lancer" class="btn btn-primary">
+                    <script type="text/javascript" src="exercice5.js"></script>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                <div class="card-body">
+                    <hr class="mt-5">
+                    <h1>Exercice 6 : recherche d'un prénom
+                    </h1>
+                    <hr>
+                    <p>Un prénom est saisi au clavier. On le recherche dans le tableau tab donné ci-après.</p>
+                    <p>Si le prénom est trouvé, on l'élimine du tableau en décalant les cases qui le suivent, et en
+                        mettant à blanc la dernière case.</p>
+                    <p>
+                        <code class="hljs cs"> <span class="hljs-keyword">var</span> tab = [<span
+                                class="hljs-string">"Audrey"</span>, <span class="hljs-string">"Aurélien"</span>, <span
+                                class="hljs-string">"Flavien"</span>, <span class="hljs-string">"Jérémy"</span>, <span
+                                class="hljs-string">"Laurent"</span>, <span class="hljs-string">"Melik"</span>, <span
+                                class="hljs-string">"Nouara"</span>, <span class="hljs-string">"Salem"</span>, <span
+                                class="hljs-string">"Samuel"</span>, <span
+                                class="hljs-string">"Stéphane"</span>];</code></pre>
+                    </p>
+                    <hr>
+                    <h1>réponse</h1>
+                    <input id="Ex6" type="text" class="form-control" placeholder="Saisir le prenom rechercher">
+                    <br>
+                    <span class="my-1" id="reponseEx6"></span>
+                    <hr>
+                    <input type="button" id="buttonEx6" value="lancer" class="btn btn-primary">
+                    <script type="text/javascript" src="exercice6.js"></script>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                <div class="card-body">
+                    <hr calss="my-4">
+                    <div class="container-fluid">
+                        <header>
+                            <figure class="row no-gutters">
+                                <img class="col-12 col-sm-6 col-md-7"
+                                    src="../Site web jarditou/jarditou_html/images/jarditou_logo.jpg"
+                                    class="image-fluid" alt="Image responsive" title="Image responsive">
+                                <figcaption
+                                    class="col-12d-sm-block col-sm-6 col-md-5 col-lg-4 col-xl-3 text-center align-self-center">
+                                    <h1>Tout le jardin</h1>
+                                </figcaption>
+                            </figure>
+                        </header>
+                        <nav id="navbar" class="navbar navbar-expand-sm bg-dark navbar-dark no-gutters">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#collapsibleNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="Index.html">Accueil</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="tableau.html">Tableau</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="formulaire.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <section class="px-3">
+                            <h1>Nous contacter</h1>
+                            <form action="http://bienvu.net/script.php" method="POST" target="blank" id="form">
+                                <fieldset>
+                                    <legend>
+                                        Vos coordonnées
+                                    </legend>
+                                    <div class="form-group">
+                                        <label for="family-name">Votre nom:*</label>
+                                        <input id="familyName" type="text" class="form-control" name="familyName"
+                                            placeholder="Saisir votre nom"><span id="errorLname"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="given-name">Votre prénom:*</label>
+                                        <input id="givenName" type="text" class="form-control" name="givenName"
+                                            placeholder="Saisir votre prénom"><span id="errorGname"></span>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            Sexe*:
+                                        </p>
+                                        <div class="form-check form-check-inline">
+                                            <input id="genre" class="form-check-input" type="radio" name="genre"
+                                                value="Masculin">
+                                            <label class="form-check-label" for="masculin">Masculin</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input id="genre2" class="form-check-input" type="radio" name="genre"
+                                                value="Feminin">
+                                            <label class="form-check-label" for="feminin">Féminin</label>
+                                        </div>
+                                        <span id="errorGenre"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="bday">Date de naissance:*</label>
+                                        <input id="bday" type="text" class="form-control" maxlength="10" name="bday"
+                                            placeholder="votre date de naissance"><span id="errorBday"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cp">Code postal:</label>
+                                        <input id="cp" type="number" class="form-control" name="cp"
+                                            placeholder="Saisir votre code postal"><span id="errorCdp"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="adresse">Adresse:</label>
+                                        <input id="adresse" type="text" class="form-control" name="adresse"
+                                            placeholder="Saisir votre adresse"><span id="errorAdrss"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ville">Ville:</label>
+                                        <input id="ville" type="text" class="form-control" name="ville"
+                                            placeholder="Saisir le nom de votre ville"><span id="errorVille"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="courriel">Adresse email*:</label>
+                                        <input id="courriel" type="email" class="form-control" name="courriel"
+                                            placeholder="Saisir votre adresse mail"><span id="errorEmail"></span>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>
+                                        Votre demande
+                                    </legend>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Sujet:*</label>
+                                        <select id="questions" class="form-control" name="questions">
+                                            <option value="false">Choisissez un sujet</option>
+                                            <option value="commandes">Mes commandes</option>
+                                            <option value="produit">Question sur un produit</option>
+                                            <option value="reclamation">Réclamation</option>
+                                            <option value="autres">Autres</option>
+                                        </select>
+                                        <span id="errorQuestions"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Votre question:*</label>
+                                        <textarea id="textquestions" class="form-control" name="textquestions"
+                                            rows="3"></textarea><span id="errorTexta"></span>
+                                    </div>
+                                </fieldset>
+                                <div class="form-check form-check-inline">
+                                    <input id="ChkForm" class="form-check-input" type="checkbox">
+                                    <label class="form-check-label" for="inlineCheckbox1">J'accepte le traitement
+                                        informatique de ce
+                                        formulaire</label>
+                                </div>
+                                <span id="errorChkForm"></span>
+                                <br>
+                                <button id="button1" type="submit"
+                                    class="btn btn-primary mx-1 my-1">Submit</button><button type="reset"
+                                    class="btn btn-secondary mx-1 my-1">Annuler</button>
+                            </form>
+                        </section>
+                        <footer>
+                            <nav id="navbar" class="navbar navbar-expand-sm bg-dark navbar-dark">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#collapsibleNavbar2">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="collapsibleNavbar2">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="">Mentions légale</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="">Horaires</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="">Plan du site</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </footer>
+                        <script type="text/javascript" src="exercice7.js"></script>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
