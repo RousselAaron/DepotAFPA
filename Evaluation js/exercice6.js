@@ -11,13 +11,14 @@ function search(tab) {
             if (tab[i] == search) {
                 console.log("aaa");
                 tab.splice(i, 1);
+                tab.push();
                 console.log(tab[i]);
             }
         }
     }
 }
 
-function TriaBulles(tab) {
+function TriaBulles6(tab) {
     for (i = 0; i < tab.length - 1; i++) {
         for (ii = 0; ii < tab.length - i - 1; ii++) {
             if (tab[ii] == undefined) {
@@ -34,5 +35,5 @@ function TriaBulles(tab) {
 var element = document.getElementById("buttonEx6");
 element.addEventListener("click", () => {
     search(tab);
-    TriaBulles(tab);
+    TriaBulles6(tab);
 });

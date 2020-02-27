@@ -3,16 +3,20 @@ var tabQTECOM = [];
 var TOT = 0;;
 var PORT = 6;
 
-function saisieTab() {
+function saisieTab1() {
     var element = document.getElementById("buttonEx1");
     element.addEventListener("click", () => {
         var inputPU = document.getElementById("Ex1in1").value;
         var inputQTECOM = document.getElementById("Ex1in2").value;
+
         var filtre = new RegExp("^[0-9]+$");
+
         var resultat1 = filtre.test(inputPU);
         var resultat2 = filtre.test(inputQTECOM);
+
         console.log(resultat1);
         console.log(resultat2);
+
         if (resultat1 == true && inputPU != 0 && inputPU != "" && resultat2 == true && inputQTECOM != 0 && inputQTECOM != "") {
             tabPU.push(parseInt(inputPU));
             console.log(tabPU);
@@ -45,29 +49,32 @@ function PAP(tabPU, tabQTECOM, PORT) {
 
     }
     console.log(TOT);
-    if (TOT < 500) {
+    // conditions if application de la reduction
+    if (TOT <= 500) {
         if (TOT >= 100 && TOT <= 200) {
             TOT *= 0.95;
-            PORT = TOT * 0.02;
+            if ((TOT * 0.02 > 6)) { PORT = TOT * 0.02; }
             console.log(reponse);
             reponse.innerHTML = ("le prix a payer est de " + (TOT + PORT) + "\nle frais de port " + (PORT));
             console.log(reponse.innerHTML);
         } else if (TOT > 200) {
             TOT *= 0.90
-            PORT = TOT * 0.02;
+            if ((TOT * 0.02 > 6)) { PORT = TOT * 0.02; }
             reponse.innerHTML = ("le prix a payer est de " + (TOT + PORT) + "\nle frais de port " + (PORT));
             console.log(reponse.innerHTML);
         } else {
             reponse.innerHTML = ("le prix a payer est de " + (TOT + PORT) + "\nle frais de port " + (PORT));
             console.log(reponse.innerHTML);
         }
-    } else if (TOT >= 500) {
+    } else if (TOT > 500) {
+
+        TOT *= 0.90;
         PORT = 0;
-        TOT *= 0.90
+        console.log(TOT);
         reponse.innerHTML = ("le prix a payer est de " + (TOT + PORT) + "\nle frais de port " + (PORT));
         console.log(reponse.innerHTML);
 
     }
 }
 
-saisieTab();
+saisieTab1();

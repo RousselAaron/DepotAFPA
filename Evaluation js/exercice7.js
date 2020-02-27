@@ -1,4 +1,4 @@
-var tabRegExp = [new RegExp("^[a-zA-Z0-9áàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ._-\\s]+$"), new RegExp("^[\\S\\a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ_-]+$"), new RegExp("^[0-9][0-9]?\/[0-9][0-9]?\/[0-9][0-9][0-9][0-9]?$"), new RegExp("^[0-9]+$"), new RegExp("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[az0-9])?"), new RegExp("^(?![false]).*$")];
+var tabRegExp = [new RegExp("^[a-zA-Z0-9áàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ._-\\s]+$"), new RegExp("^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ_-\\s]+$"), new RegExp("^[0-9][0-9]?\/[0-9][0-9]?\/[0-9][0-9][0-9][0-9]?$"), new RegExp("^[0-9]+$"), new RegExp("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[az0-9])?"), new RegExp("^(?![false]).*$")];
 // tab RegEx: 0-string & number, 1-string only, 2-Bday only, 3-number only, 4-Email, 5-validSubject.
 var tabErrorMess = ["<p>ce champs doit etre renseigné</p>", "<p>ce champs doit etre renseigné et doit contenir uniquement des lettres et des tirets</p>", "<p>ce champs doit etre renseigné et doit contenir une date de naissance valide <br>exemple jj/mm/aaaa</p>", "<p>ce champs doit etre renseigné et doit contenir uniquement des nombres</p>", "<p>ce champs doit etre renseigné et doit contenir une adresse mail valide <br>exemple :jhon@wick.com</p>", "selectionnez un sujet"];
 var tabErrorId = ['errorLname', 'errorGname', 'errorGenre', 'errorBday', 'errorCdp', 'errorAdrss', 'errorVille', 'errorEmail', 'errorQuestions', 'errorTexta', 'errorChkForm']
@@ -26,6 +26,7 @@ champ(9, 0);
 
 function champ(x, w) {
     let ele = document.getElementById(tabInputName[x]);
+    ele.value = ele.value.trim();
     if (ele.value != undefined) {
         ele.addEventListener("blur", (element) => {
             console.log(ele.value);
@@ -43,7 +44,7 @@ function verifChmp(x, w, ele) {
     if (ele.value != undefined) {
         let filtre = tabRegExp[w];
         console.log(filtre);
-        tabIsValid[x] = filtre.test(ele.value.trim());
+        tabIsValid[x] = filtre.test(ele.value);
         console.log(ele.value);
         error = tabIsValid[x];
         console.log(error);

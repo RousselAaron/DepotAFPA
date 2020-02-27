@@ -3,12 +3,12 @@ var m;
 var max;
 var tabNoTri = [];
 
-function getInteger() {
+function getInteger3() {
     x = window.parseInt(prompt("saisissez la taille du tableau"));
 }
 
 
-function initTab(x) {
+function initTab3(x) {
     console.log(x);
     tab = Array(x);
     tabNoTri = Array(x);
@@ -16,23 +16,24 @@ function initTab(x) {
 }
 
 
-function saisieTab(tab) {
+function saisieTab3(tab) {
     for (i = 0; i < tab.length; i++) {
         m = window.parseInt(prompt("saisissez une valeurdans le tableau"));
         tab[i] = m;
         tabNoTri[i] = m;
     }
-    afficheTab(tab);
+    afficheTab3(tab);
 }
 
 
-function afficheTab(tab) {
+function afficheTab3(tab) {
     console.log(tab);
 }
 
-
-function TriaBulles(tab) {
+// Usage du tri à bulle pour selectionner directement le min et le max (1er et dernier element du tableau)
+function TriaBulles3(tab) {
     for (i = 0; i < tab.length - 1; i++) {
+        // Retrait du dernier indice afin d'optimiser l'execution de l'algo
         for (ii = 0; ii < tab.length - i - 1; ii++) {
             if (tab[ii] > tab[ii + 1]) {
                 var temp = tab[ii];
@@ -56,9 +57,11 @@ function MinMax(tab, tabNoTri) {
 
 var element = document.getElementById("buttonEx3");
 element.addEventListener("click", () => {
-    getInteger(x);
-    initTab(x);
-    saisieTab(tab);
-    TriaBulles(tab);
+    getInteger3(x);
+    initTab3(x);
+    saisieTab3(tab);
+    console.log(tab);
+    TriaBulles3(tab);
+    console.log(tab);
     MinMax(tab, tabNoTri);
 });

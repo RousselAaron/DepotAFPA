@@ -3,22 +3,22 @@ var tab = [];
 var result;
 var reponseMessage = "";
 
-function saisieTab(tab) {
+function saisieTab4(tab) {
 
     console.log(document.getElementById("Ex4").value);
     var entree = parseInt(document.getElementById("Ex4").value);
-    if (!isNaN(entree) && entree != 0 && entree < 100) {
+    if (!isNaN(entree) && entree != 0 && entree <= 100) {
         console.log("aaa");
         tab.push(entree);
     }
 }
 
 
-function resultat(tab) {
+function resultat4(tab) {
     reponseMessage = "";
     jeunes = tab.map(x => x < 20);
     countOccurences(jeunes, "jeunes");
-    moyen = tab.map(x => x > 20 && x < 40);
+    moyen = tab.map(x => x >= 20 && x <= 40);
     countOccurences(moyen, "moyen");
     vieux = tab.map(x => x > 40);
     countOccurences(vieux, "vieux");
@@ -37,16 +37,16 @@ function countOccurences(tab, classe) {
     return result;
 }
 
-function reponse(reponseMessage) {
+function reponse4(reponseMessage) {
     var reponse = document.getElementById("reponseEx4");
     reponse.innerHTML = reponseMessage;
 }
 
 var element = document.getElementById("buttonEx4");
 element.addEventListener("click", () => {
-    saisieTab(tab);
-    resultat(tab, result);
-    reponse(reponseMessage);
+    saisieTab4(tab);
+    resultat4(tab, result);
+    reponse4(reponseMessage);
 });
 
 var element = document.getElementById("buttonReset4");
