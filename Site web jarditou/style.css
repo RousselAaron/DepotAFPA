@@ -1,145 +1,142 @@
-@media screen and (max-width: 768px){
-    h1
-    {
+@media screen and (max-width: 768px) {
+    h1 {
         font-size: large;
     }
-    h2
-    {
+
+    h2 {
         font-size: large;
     }
-    html
-    {
+
+    html {
         font-size: 100%;
     }
+
     /* tableau */
 
-    .articletab
-    {
+    .articletab {
         overflow-x: auto;
     }
-    table
-    {
+
+    table {
         border: thin solid #eeeeee;
         border-collapse: collapse;
         margin: 2%;
         width: 90%;
         font-size: medium;
     }
-    th
-    {
+
+    th {
         border: thin solid #eeeeee;
         font-size: medium;
     }
-    tr
-    {
+
+    tr {
         width: fit-content;
     }
-    td
-    { 
+
+    td {
         border: thin solid #eeeeee;
         vertical-align: top;
         padding: 1%;
         width: fit-content;
     }
-    .Img
-    {
+
+    .Img {
         padding: 1%;
         border: thin solid #eeeeee;
         border-radius: 5%;
         height: auto;
         width: 5rem;
-    } 
-    .btxt
-    {
+    }
+
+    .btxt {
         color: rgb(14, 179, 255);
     }
 
     /* formulaire */
 
-    form
-    {
+    form {
         font-size: medium;
     }
-    input,select,textarea
-    {
+
+    input,
+    select,
+    textarea {
         border-width: thin;
         margin: 1%;
     }
+
     /* mis en page body */
-    .div1
-    {
+    .div1 {
         flex: 60%;
-        
+
     }
-    .articleflex
-    { 
+
+    .articleflex {
         display: flex;
     }
-    aside
-    {
+
+    aside {
 
         background-color: #eeeeee;
         border: 1px solid #000000;
         flex: 30%;
         font-size: medium;
         display: none;
-        
+
     }
+
     /* téte de page */
-    header
-    {
+    header {
         height: auto;
         width: fit-content;
     }
 
-    .txtacenter
-    {
+    .txtacenter {
         text-align: center;
         font-size: larger;
         padding: 1%;
         margin: 1%;
     }
-    .logo
-    {
+
+    .logo {
         align-content: center;
         padding: 1%;
         height: auto;
         width: 100%;
     }
-    .promo
-    {
+
+    .promo {
         width: 100%;
         height: auto;
     }
 
-    /* navbar */ 
-    ul
-    {
+    /* navbar */
+    ul {
         width: 100%;
         background-color: black;
         padding: 0%;
         list-style-type: none;
         text-align: center;
     }
-    li
-    {
+
+    li {
         margin-left: 2rem;
     }
-    .txtBlanc
-    {
+
+    .txtBlanc {
         color: blanchedalmond;
     }
 }
 
-@media screen and (min-width: 768px){
-    html
-    {
+@media screen and (min-width: 768px) {
+    html {
         font-size: 100%;
     }
+
     /* tableau */
 
-    table
-    {
+    table {
         border: thin solid #eeeeee;
         border-collapse: collapse;
         margin: 2%;
@@ -147,50 +144,49 @@
         overflow-x: scroll;
         font-size: medium;
     }
-    th
-    {
+
+    th {
         border: thin solid #eeeeee;
         font: ;
     }
-    td
-    { 
+
+    td {
         border: thin solid #eeeeee;
         vertical-align: top;
     }
-    .Img
-    {
+
+    .Img {
         padding: 1%;
         border: thin solid #eeeeee;
         border-radius: 5%;
         height: auto;
         width: 5rem;
-        } 
-    .btxt
-    {
+    }
+
+    .btxt {
         color: rgb(14, 179, 255);
-    
+
     }
 
     /* formulaire */
 
-    form
-    {
+    form {
         font-size: medium;
-        
+
     }
+
     /* mis en page body */
 
-    .div1
-    {
+    .div1 {
         flex: 60%;
-        
+
     }
-    .articleflex
-    { 
+
+    .articleflex {
         display: flex;
     }
-    aside
-    {
+
+    aside {
         background-color: #eeeeee;
         border: 1px solid #000000;
         flex: 30%;
@@ -198,53 +194,50 @@
     }
 
     /* téte de page */
-    header
-    {
+    header {
         height: auto;
         width: fit-content;
     }
-    figure
-    {
+
+    figure {
         display: flex;
         align-items: center;
     }
-    .txtacenter
-    {
+
+    .txtacenter {
         flex: 20%;
         font-size: xx-large;
         padding: 1%;
         margin: 1%;
     }
-    .logo
-    {
+
+    .logo {
         padding: 1%;
         height: auto;
         width: 30%;
     }
-    .promo
-    {
+
+    .promo {
         margin: 1%;
         width: 100%;
         height: auto;
     }
 
-    /* navbar */ 
-    ul
-    {
+    /* navbar */
+    ul {
         width: 100%;
         background-color: black;
         padding: 1%;
         list-style-type: none;
         text-align: center;
     }
-    li
-    {
+
+    li {
         margin-left: 2rem;
         display: inline;
     }
-    .txtBlanc
-    {
+
+    .txtBlanc {
         color: blanchedalmond;
     }
 }
-

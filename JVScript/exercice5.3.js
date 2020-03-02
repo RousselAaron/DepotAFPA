@@ -28,7 +28,7 @@ function afficheTab(tab) {
 
 
 function TriaBulles() {
-    for (i = 0; i < tab.length; i++) {
+    for (i = 0; i < tab.length - 1; i++) {
         for (ii = 0; ii < tab.length - i - 1; ii++) {
             if (tab[ii] > tab[ii + 1]) {
                 var temp = tab[ii];
@@ -37,9 +37,12 @@ function TriaBulles() {
             }
         }
     }
-    console.log(tab)
+    console.log(tab);
+    console.log(tab[0]);
+    console.log(tab[tab.length - 1]);
 }
 TriaBulles(tab);
+
 
 function TriaBullesDécrois() {
     for (i = tab.length; i > 0; i--) {

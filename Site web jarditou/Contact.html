@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="style.css">
     <title>Jarditou - Contact</title>
 </head>
-<body> 
+
+<body>
     <header>
         <figure>
             <img class="logo" src="jarditou_html/images/jarditou_logo.jpg" alt="Logo Jarditou">
@@ -27,46 +29,47 @@
         </ul>
     </nav>
     <h1>Nous contacter</h1>
-            <form action="http://bienvu.net/script.php" method="POST" id="formulaire_contact">
-                <fieldset>
-                    <legend>
-                        Vos coordonnées
-                    </legend>
-                    Votre Nom*: <input required type="text" name="Nom" autocomplete="family-name"><br>
-                    Votre Prénom*: <input required type="text" name="Prénom" autocomplete="given-name"><br>
-                    <p>
-                        Sexe*:
-                    </p>
-                        <input type="radio" required name="sexe" value="Masculin"> Masculin
-                        <input type="radio" required name="sexe" value="Féminin"> Féminin
-                        <br>
-                    date de naissance*: <input required type="date" name="ddn" autocomplete="bday"><br>
-                    Code postal: <input type="text" name="cdp" autocomplete="postal-code"><br>
-                    Adresse: <input type="text" name="adrs" autocomplete="on"><br>
-                    Ville: <input type="text" name="ville" autocomplete="on"><br>
-                    Email*: <input required type="email" name="email" autocomplete="email"><br>
-            
-                </fieldset>
-                <fieldset>
-                    <legend>
-                        Votre demande
-                    </legend>
-                    Sujet*:
-                    <select required name="sujet" size="1">
-                        <option value="mescommandes">Mes commandes</option>
-                        <option value="qsp">Question sur un produit</option>
-                        <option value="rclm">Réclamation</option>
-                        <option value="autres">Autres</option>
-                    </select><br>
-                    Votre question*:<textarea required name="questions" rows="3"></textarea>
-                </fieldset>
-                <p><input required type="checkbox" name="chckmentionslegale" Value="yes">J'accepte le traitement informatique de ce formulaire.</p>
-                <br><input type="submit" value="Envoyer"> <input type="button" Value="Annuler">
-            </form>
+    <form action="http://bienvu.net/script.php" method="POST" id="formulaire_contact">
+        <fieldset>
+            <legend>
+                Vos coordonnées
+            </legend>
+            Votre Nom*: <input required type="text" name="Nom" autocomplete="family-name"><br>
+            Votre Prénom*: <input required type="text" name="Prénom" autocomplete="given-name"><br>
+            <p>
+                Sexe*:
+            </p>
+            <input type="radio" required name="sexe" value="Masculin"> Masculin
+            <input type="radio" required name="sexe" value="Féminin"> Féminin
+            <br>
+            date de naissance*: <input required type="date" name="ddn" autocomplete="bday"><br>
+            Code postal: <input type="text" name="cdp" autocomplete="postal-code"><br>
+            Adresse: <input type="text" name="adrs" autocomplete="on"><br>
+            Ville: <input type="text" name="ville" autocomplete="on"><br>
+            Email*: <input required type="email" name="email" autocomplete="email"><br>
+
+        </fieldset>
+        <fieldset>
+            <legend>
+                Votre demande
+            </legend>
+            Sujet*:
+            <select required name="sujet" size="1">
+                <option value="mescommandes">Mes commandes</option>
+                <option value="qsp">Question sur un produit</option>
+                <option value="rclm">Réclamation</option>
+                <option value="autres">Autres</option>
+            </select><br>
+            Votre question*:<textarea required name="questions" rows="3"></textarea>
+        </fieldset>
+        <p><input required type="checkbox" name="chckmentionslegale" Value="yes">J'accepte le traitement informatique de
+            ce formulaire.</p>
+        <br><input type="submit" value="Envoyer"> <input type="button" Value="Annuler">
+    </form>
     <footer>
         <ul class="navbar">
             <li>
-                <a class="txtBlanc" href="">Mentions légales</a>                
+                <a class="txtBlanc" href="">Mentions légales</a>
             </li>
             <li>
                 <a class="txtBlanc" href="">Horaires</a>
@@ -76,5 +79,6 @@
             </li>
         </ul>
     </footer>
-    </body>
+</body>
+
 </html>

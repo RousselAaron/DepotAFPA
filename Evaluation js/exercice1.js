@@ -2,6 +2,7 @@ var tabPU = [];
 var tabQTECOM = [];
 var TOT = 0;;
 var PORT = 6;
+var reponse;
 
 function saisieTab1() {
     var element = document.getElementById("buttonEx1");
@@ -46,34 +47,34 @@ function PAP(tabPU, tabQTECOM, PORT) {
     console.log(reponse.value);
     for (i = 0; i < tabPU.length; i++) {
         TOT += tabPU[i] * tabQTECOM[i];
-
     }
     console.log(TOT);
-    // conditions if application de la reduction
     if (TOT <= 500) {
         if (TOT >= 100 && TOT <= 200) {
             TOT *= 0.95;
-            if ((TOT * 0.02 > 6)) { PORT = TOT * 0.02; }
-            console.log(reponse);
-            reponse.innerHTML = ("le prix a payer est de " + (TOT + PORT) + "\nle frais de port " + (PORT));
-            console.log(reponse.innerHTML);
         } else if (TOT > 200) {
             TOT *= 0.90
-            if ((TOT * 0.02 > 6)) { PORT = TOT * 0.02; }
-            reponse.innerHTML = ("le prix a payer est de " + (TOT + PORT) + "\nle frais de port " + (PORT));
-            console.log(reponse.innerHTML);
-        } else {
-            reponse.innerHTML = ("le prix a payer est de " + (TOT + PORT) + "\nle frais de port " + (PORT));
-            console.log(reponse.innerHTML);
         }
     } else if (TOT > 500) {
-
         TOT *= 0.90;
-        PORT = 0;
-        console.log(TOT);
-        reponse.innerHTML = ("le prix a payer est de " + (TOT + PORT) + "\nle frais de port " + (PORT));
-        console.log(reponse.innerHTML);
+    }
+    FPORT(reponse);
+}
 
+function FPORT(reponse) {
+    if (TOT <= 500) {
+        if (TOT >= 100 && TOT <= 200 && TOT * 0.02 > 6) {
+            PORT = TOT * 0.02
+            reponse.innerHTML = ("le prix a payer est de " + (TOT + PORT) + "\nle frais de port " + (PORT));
+        } else if (TOT > 200 && TOT * 0.02 > 6) {
+            PORT = TOT * 0.02
+            reponse.innerHTML = ("le prix a payer est de " + (TOT + PORT) + "\nle frais de port " + (PORT));
+        } else {
+            reponse.innerHTML = ("le prix a payer est de " + (TOT + PORT) + "\nle frais de port " + (PORT));
+        }
+    } else if (TOT > 500) {
+        PORT = 0;
+        reponse.innerHTML = ("le prix a payer est de " + (TOT + PORT) + "\nle frais de port " + (PORT));
     }
 }
 

@@ -9,7 +9,7 @@ element.addEventListener("click", () => {
     x = parseInt(entree.value);
     for (i = 1; i <= 10; i++) {
         res = i * x;
-        reponseMessage += (i + "X" + x + "=" + res + "<br>");
+        reponseMessage += (i + " X " + x + " = " + res + "<br>");
     }
     document.getElementById("reponseEx5").innerHTML = reponseMessage;
     document.getElementById("Ex5").value = "";
