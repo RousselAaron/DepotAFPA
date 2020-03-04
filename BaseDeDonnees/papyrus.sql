@@ -90,6 +90,27 @@ CREATE TABLE IF NOT EXISTS `vente` (
   CONSTRAINT `vente_ibfk_2` FOREIGN KEY (`codArt`) REFERENCES `produit` (`codArt`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+
+CREATE USER "util1"@'%' IDENTIFIED BY "util1";
+
+GRANT ALL PRIVILEGES ON papyrus.* TO "util1"
+IDENTIFIED BY "util1";
+
+CREATE USER "util2"@'%' IDENTIFIED BY "util2";
+
+GRANT select
+ON papyrus.* 
+TO "util2"
+IDENTIFIED BY "util2";
+
+CREATE USER "util3"@'%' IDENTIFIED BY "util3";
+
+GRANT select 
+ON papyrus.fournis 
+TO "util3"
+IDENTIFIED BY "util3";
+
+
 -- Les données exportées n'étaient pas sélectionnées.
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
