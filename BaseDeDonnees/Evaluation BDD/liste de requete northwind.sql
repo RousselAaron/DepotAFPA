@@ -1,12 +1,12 @@
 Ex1 partie 2:
 
-SELECT CompanyName,ContactName,ContactTitle,Phone,country
+SELECT CompanyName AS `Société`,ContactName AS `contact`,ContactTitle AS `Fonction`,Phone AS `Téléphone`
 FROM suppliers
 WHERE country LIKE 'France'
 
 Ex2 :
 
-SELECT ProductName,UnitPrice
+SELECT ProductName AS `Produit`,UnitPrice AS `Prix`
 FROM products
 INNER JOIN suppliers ON products.SupplierID = suppliers.SupplierID
 WHERE companyName LIKE 'Exotic Liquids'
@@ -75,7 +75,7 @@ ORDER BY orderdate DESC LIMIT 1;
 
 Ex10 :
 
-SELECT ROUND(AVG(DATEDIFF(shippeddate,orderdate)))
+SELECT ROUND(AVG(DATEDIFF(shippeddate,orderdate))) AS `délai moyen de livraison en jours`
 FROM orders
 
 
