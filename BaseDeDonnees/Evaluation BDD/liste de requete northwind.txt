@@ -73,4 +73,9 @@ INNER JOIN orders ON customers.CustomerID = orders.CustomerID
 WHERE companyName = 'Du monde entier'
 ORDER BY orderdate DESC LIMIT 1;
 
+Ex10 :
+
+SELECT ROUND(AVG(DATEDIFF(shippeddate,orderdate)))
+FROM orders
+
 
